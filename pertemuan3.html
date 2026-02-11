@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX Designer Portfolio</title>
+    <link rel="stylesheet" href="pertemuan3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-layer-group"></i>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#contact" class="btn-talk">Let's Talk</a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Hi I am</h1>
+                    <h2 class="hero-title">Zaldi<br><span>Muzaky</span></h2>
+                    <p class="hero-description">Information Systems student and aspiring Full-Stack Developer. > Since starting my coding journey in 2025, I have focused on building efficient, high-impact systems. My experience as a Partnership Staff at AIESEC has sharpened my communication and project management skills, which I integrate into my development workflow. I am eager to collaborate and contribute to the evolving tech industry.</p>
+                </div>
+                <div class="hero-image">
+                    <img src="porto2.jpg" alt="Profile Photo">
+                    <div class="floating-element badge-1">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/zaldi-gunayah-muzaky-28ab44379" target="_blank" class="social-icon" data-social="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/zaldimuzaky" target="_blank" class="social-icon" data-social="instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/zaldimuzaky-phyton" target="_blank" class="social-icon" data-social="github"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="decorative-pattern"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT ME SECTION -->
+        <section id="about" class="about">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="porto1.jpg" alt="About Me Photo">
+                    <div class="circle-decoration"></div>
+                </div>
+                <div class="about-text">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="about-description">I bridge the gap between technical web development and strategic marketing. By combining my coding foundation with partnership experience from AIESEC, I build efficient, user-centric systems designed for growth and impact.</p>
+                    
+                    <div class="skills-bars">
+                        <div class="skill">
+                            <div class="skill-header">
+                                <span class="skill-name"><i class="fas fa-code"></i> Full-Stack Web Dev</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress dev-basic"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill">
+                            <div class="skill-header">
+                                <span class="skill-name"><i class="fas fa-chart-line"></i> Strategic Marketing</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress marketing-mid"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill">
+                            <div class="skill-header">
+                                <span class="skill-name"><i class="fas fa-handshake"></i> B2B Sales</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress sales-basic"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill">
+                            <div class="skill-header">
+                                <span class="skill-name"><i class="fas fa-tasks"></i> Project Management</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress management-mid"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS TABLE SECTION -->
+        <section id="skills" class="skills-table-section">
+            <div class="container">
+                <h2 class="section-title center">My Skills</h2>
+                <p class="section-subtitle">Technical expertise across Development, Marketing & Management</p>
+                
+                <div class="skills-filter-buttons">
+                    <button class="skill-filter-btn active" data-filter="all">
+                        <i class="fas fa-th"></i> All Skills
+                    </button>
+                    <button class="skill-filter-btn" data-filter="dev">
+                        <i class="fas fa-code"></i> Development
+                    </button>
+                    <button class="skill-filter-btn" data-filter="marketing">
+                        <i class="fas fa-bullhorn"></i> Marketing
+                    </button>
+                    <button class="skill-filter-btn" data-filter="management">
+                        <i class="fas fa-users"></i> Management
+                    </button>
+                </div>
+                
+                <div class="table-card">
+                    <table class="skills-table">
+                        <thead>
+                            <tr>
+                                <th><i class="fas fa-hashtag"></i> No</th>
+                                <th><i class="fas fa-tools"></i> Skill Name</th>
+                                <th><i class="fas fa-chart-bar"></i> Category</th>
+                                <th><i class="fas fa-star"></i> Proficiency Level</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="skill-row" data-category="dev">
+                                <td>1</td>
+                                <td><i class="fab fa-react skill-icon" style="color: #61DAFB;"></i> React.js</td>
+                                <td><span class="category-tag dev-tag">Development</span></td>
+                                <td><span class="badge badge-basic">Basic</span></td>
+                            </tr>
+                            <tr class="skill-row" data-category="dev">
+                                <td>2</td>
+                                <td><i class="fas fa-wind skill-icon" style="color: #06B6D4;"></i> Tailwind CSS</td>
+                                <td><span class="category-tag dev-tag">Development</span></td>
+                                <td><span class="badge badge-intermediate">Intermediate</span></td>
+                            </tr>
+                            <tr class="skill-row" data-category="dev">
+                                <td>3</td>
+                                <td><i class="fab fa-node-js skill-icon" style="color: #339933;"></i> Node.js & Express</td>
+                                <td><span class="category-tag dev-tag">Development</span></td>
+                                <td><span class="badge badge-basic">Basic</span></td>
+                            </tr>
+                            <tr class="skill-row" data-category="dev">
+                                <td>4</td>
+                                <td><i class="fas fa-database skill-icon" style="color: #336791;"></i> PostgreSQL & MongoDB</td>
+                                <td><span class="category-tag dev-tag">Development</span></td>
+                                <td><span class="badge badge-basic">Basic</span></td>
+                            </tr>
+                            <tr class="skill-row" data-category="marketing">
+                                <td>5</td>
+                                <td><i class="fas fa-chart-line skill-icon" style="color: #FF6B6B;"></i> Conversion Rate Optimization (CRO)</td>
+                                <td><span class="category-tag marketing-tag">Marketing</span></td>
+                                <td><span class="badge badge-intermediate">Intermediate</span></td>
+                            </tr>
+                            <tr class="skill-row" data-category="marketing">
+                                <td>6</td>
+                                <td><i class="fas fa-search skill-icon" style="color: #4285F4;"></i> SEO & Digital Analytics</td>
+                                <td><span class="category-tag marketing-tag">Marketing</span></td>
+                                <td><span class="badge badge-intermediate">Intermediate</span></td>
+                            </tr>
+                            <tr class="skill-row" data-category="marketing">
+                                <td>7</td>
+                                <td><i class="fas fa-magnet skill-icon" style="color: #9B59B6;"></i> Strategic Lead Generation</td>
+                                <td><span class="category-tag marketing-tag">Marketing</span></td>
+                                <td><span class="badge badge-basic">Basic</span></td>
+                            </tr>
+                            <tr class="skill-row" data-category="marketing">
+                                <td>8</td>
+                                <td><i class="fas fa-users-cog skill-icon" style="color: #E67E22;"></i> CRM Management</td>
+                                <td><span class="category-tag marketing-tag">Marketing</span></td>
+                                <td><span class="badge badge-intermediate">Intermediate</span></td>
+                            </tr>
+                            <tr class="skill-row" data-category="management">
+                                <td>9</td>
+                                <td><i class="fas fa-handshake skill-icon" style="color: #27AE60;"></i> Stakeholder Negotiation & Pitching</td>
+                                <td><span class="category-tag management-tag">Management</span></td>
+                                <td><span class="badge badge-intermediate">Intermediate</span></td>
+                            </tr>
+                            <tr class="skill-row" data-category="management">
+                                <td>10</td>
+                                <td><i class="fas fa-project-diagram skill-icon" style="color: #3498DB;"></i> Agile & Scrum Methodologies</td>
+                                <td><span class="category-tag management-tag">Management</span></td>
+                                <td><span class="badge badge-basic">Basic</span></td>
+                            </tr>
+                            <tr class="skill-row" data-category="management">
+                                <td>11</td>
+                                <td><i class="fas fa-coins skill-icon" style="color: #F39C12;"></i> Resource & Budget Planning</td>
+                                <td><span class="category-tag management-tag">Management</span></td>
+                                <td><span class="badge badge-intermediate">Intermediate</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-header">
+                    <h2 class="section-title center">Let's Connect</h2>
+                    <p class="section-subtitle">Feel free to reach out for collaborations, project inquiries, or just a friendly hello!</p>
+                </div>
+                
+                <div class="contact-wrapper">
+                    <div class="contact-left">
+                        <div class="contact-intro">
+                            <h3>Get in Touch</h3>
+                            <p>I'm always excited to work on new projects and collaborate with creative minds. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                        </div>
+                        
+                        <div class="contact-info-list">
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="info-text">
+                                    <h4>Email</h4>
+                                    <a href="mailto:zaldimuzaky@gmail.com">zaldimuzaky@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="info-text">
+                                    <h4>Phone</h4>
+                                    <a href="tel:+62831979969800">+62 831-9799-6980</a>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="info-text">
+                                    <h4>Location</h4>
+                                    <p>Jakarta, Indonesia</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-right">
+                        <div class="contact-intro">
+                            <h3>Send Message</h3>
+                            <p>Fill out the form below and I'll get back to you as soon as possible. Looking forward to hearing from you!</p>
+                        </div>
+                        
+                        <form class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Full Name</label>
+                                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="How can I help you?" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="6" placeholder="Tell me about your project..." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary submit-btn">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="contact-social-section">
+                    <h4>Follow Me</h4>
+                    <div class="social-links-horizontal">
+                        <a href="https://www.linkedin.com/in/zaldi-gunayah-muzaky-28ab44379" target="_blank" class="social-link" data-social="linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span class="social-name">LinkedIn</span>
+                        </a>
+                        <a href="https://www.instagram.com/zaldimuzaky" target="_blank" class="social-link" data-social="instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span class="social-name">Instagram</span>
+                        </a>
+                        <a href="https://github.com/zaldimuzaky-phyton" target="_blank" class="social-link" data-social="github">
+                            <i class="fab fa-github"></i>
+                            <span class="social-name">GitHub</span>
+                        </a>
+                        <a href="https://www.facebook.com/share/17j15rRbAB/" target="_blank" class="social-link" data-social="facebook">
+                            <i class="fab fa-facebook-f"></i>
+                            <span class="social-name">Facebook</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-layer-group"></i>
+                <p>Crafting digital experiences with precision and creativity</p>
+            </div>
+            
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/zaldi-gunayah-muzaky-28ab44379" target="_blank" class="footer-social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/zaldimuzaky" target="_blank" class="footer-social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/zaldimuzaky-phyton" target="_blank" class="footer-social-icon"><i class="fab fa-github"></i></a>
+                <a href="https://www.facebook.com/share/17j15rRbAB/" target="_blank" class="footer-social-icon"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Zaldi Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking nav links
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Portfolio filter
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const portfolioCards = document.querySelectorAll('.portfolio-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+
+                const filter = btn.getAttribute('data-filter');
+
+                portfolioCards.forEach(card => {
+                    if (filter === 'all') {
+                        card.style.display = 'block';
+                    } else {
+                        if (card.getAttribute('data-category') === filter) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    }
+                });
+            });
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Active nav on scroll
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const sections = document.querySelectorAll('section');
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            document.querySelectorAll('.nav-menu a').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Skills filter functionality
+        const skillFilterBtns = document.querySelectorAll('.skill-filter-btn');
+        const skillRows = document.querySelectorAll('.skill-row');
+
+        skillFilterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                skillFilterBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+
+                const filter = btn.getAttribute('data-filter');
+
+                skillRows.forEach(row => {
+                    if (filter === 'all') {
+                        row.classList.remove('hidden');
+                    } else {
+                        if (row.getAttribute('data-category') === filter) {
+                            row.classList.remove('hidden');
+                        } else {
+                            row.classList.add('hidden');
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
