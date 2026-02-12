@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UI/UX Designer Portfolio</title>
-    <link rel="stylesheet" href="pertemuan3.css">
+    <link rel="stylesheet" href="pertemuan4.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -293,6 +293,10 @@
                                 <i class="fas fa-paper-plane"></i>
                             </button>
                         </form>
+                        <div class="confirmation-message" id="confirmationMessage">
+                            <i class="fas fa-check-circle"></i>
+                            <span id="confirmationText"></span>
+                        </div>
                     </div>
                 </div>
                 
@@ -341,6 +345,11 @@
             <p>&copy; 2026 Zaldi Portfolio. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Dark Mode Toggle Button -->
+    <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle Dark Mode">
+        <i class="fas fa-moon"></i>
+    </button>
 
     <script>
         // Mobile menu toggle
@@ -447,6 +456,59 @@
                     }
                 });
             });
+        });
+
+        // Dark Mode Toggle
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const darkModeIcon = darkModeToggle.querySelector('i');
+
+        // Check for saved dark mode preference
+        const darkMode = localStorage.getItem('darkMode');
+        if (darkMode === 'enabled') {
+            body.classList.add('dark-mode');
+            darkModeIcon.classList.remove('fa-moon');
+            darkModeIcon.classList.add('fa-sun');
+        }
+
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            
+            // Update icon
+            if (body.classList.contains('dark-mode')) {
+                darkModeIcon.classList.remove('fa-moon');
+                darkModeIcon.classList.add('fa-sun');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                darkModeIcon.classList.remove('fa-sun');
+                darkModeIcon.classList.add('fa-moon');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+
+        // Form Handling
+        const contactForm = document.querySelector('.contact-form');
+        const confirmationMessage = document.getElementById('confirmationMessage');
+        const confirmationText = document.getElementById('confirmationText');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Get form data
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            
+            // Display confirmation message
+            confirmationText.textContent = `Halo ${name}, pesan Anda berhasil terkirim!`;
+            confirmationMessage.classList.add('show');
+            
+            // Reset form
+            contactForm.reset();
+            
+            // Hide confirmation message after 5 seconds
+            setTimeout(() => {
+                confirmationMessage.classList.remove('show');
+            }, 5000);
         });
     </script>
 </body>
